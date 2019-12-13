@@ -1,0 +1,93 @@
+{
+  "name": "project-david-hapi-js-boilerplate",
+  "version": "0.0.1",
+  "description": "hapi js boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js ",
+    "dev": "npm run packer:watch && nodemon index.js",
+    "prestart": "npm run packer",
+    "packer": "npx webpack",
+    "packer:watch": "npx webpack --watch",
+    "build:css": "bin/build-css",
+    "build": "bin/build",
+    "lint": "standard",
+    "unit-test": "lab -c -r console -o stdout -r lcov -o lcov.info",
+    "test": "npm run lint && npm run unit-test",
+    "postinstall": "npm run build"
+  },
+  "author": "Sajan Thomas",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "7.4.7",
+    "@hapi/hapi": "18.4.0",
+    "@hapi/inert": "5.2.2",
+    "@hapi/joi": "16.1.2",
+    "@hapi/vision": "5.5.4",
+    "add": "^2.0.6",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "blipp": "4.0.1",
+    "chalk": "^3.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "config": "^3.2.4",
+    "dotenv": "^8.2.0",
+    "glob": "^7.1.6",
+    "govuk-frontend": "3.2.0",
+    "grunt": "^1.0.4",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.2.0",
+    "gulp-nodemon": "^2.4.2",
+    "handlebars": "^4.5.3",
+    "mongoose": "^5.8.1",
+    "pm2": "^4.2.1",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@hapi/code": "6.0.0",
+    "@hapi/good": "8.2.2",
+    "@hapi/good-console": "8.1.2",
+    "@hapi/good-squeeze": "5.2.1",
+    "@hapi/lab": "20.2.2",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "codeclimate-test-reporter": "0.5.1",
+    "css-loader": "^3.3.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "standard": "14.3.1",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajanthomas01/project-david-hapi-js-boilerplate.git"
+  },
+  "keywords": [
+    "hapi-js-boilerplate",
+    "hapijs",
+    "sajan",
+    "sajan.dev",
+    "inmenzo",
+    "technologies",
+    "sajanthomas01",
+    "gulp",
+    "grunt",
+    "webpack"
+  ],
+  "bugs": {
+    "url": "https://github.com/sajanthomas01/project-david-hapi-js-boilerplate/issues"
+  },
+  "homepage": "https://github.com/sajanthomas01/project-david-hapi-js-boilerplate#readme"
+}
