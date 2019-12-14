@@ -3,13 +3,15 @@
 # PROJECT DAVID - HAPI JS BOILERPLATE
   This boilerplate is made on top of [DEFRA/hapi-web-boilerplate](https://github.com/DEFRA/hapi-web-boilerplate). The project uses handlebars templating engine, uses mongodb as database and webpack 4 for bundling combined with gulp and grunt for managing task. 
 
+  ### THIS IS STILL WIP, OPEN TO ANYONE TO MAKE THIS BETTER :)
+
 # Environment variables
 (Be sure to describe any environment variables here by maintaining a list like this)
 
 | name     | description      | required | default |            valid            | notes |
 |----------|------------------|:--------:|---------|:---------------------------:|-------|
-| NODE_ENV | Node environment |    no    |         | development,test,production |       |
-| PORT     | Port number      |    no    | 8082    |                             |       |
+| NODE_ENV | Node environment |    yes    |         | development,test,production |       |
+| PORT     | Port number      |    yes    | 8082    |                             |       |
 
 # Prerequisites
 
